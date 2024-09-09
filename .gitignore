@@ -56,6 +56,6 @@ used_space.png
 # macos files
 .DS_STORE
 
-rgbds-0.7.0\
+rgbds-0.7.0/
 
 *.bat
