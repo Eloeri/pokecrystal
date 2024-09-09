@@ -1,9 +1,9 @@
 roms := \
-	pokecrystal.gbc \
+	#pokecrystal.gbc \
 	pokecrystal11.gbc \
-	pokecrystal_au.gbc \
-	pokecrystal_debug.gbc \
-	pokecrystal11_debug.gbc
+	#pokecrystal_au.gbc \
+	#pokecrystal_debug.gbc \
+	#pokecrystal11_debug.gbc
 patches := pokecrystal11.patch
 
 rom_obj := \

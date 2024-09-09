@@ -4,13 +4,14 @@ SaveMenu:
 	call SpeechTextbox
 	call UpdateSprites
 	farcall SaveMenu_CopyTilemapAtOnce
-	ld hl, WouldYouLikeToSaveTheGameText
-	call SaveTheGame_yesorno
-	jr nz, .refused
-	call AskOverwriteSaveFile
-	jr c, .refused
+;	ld hl, WouldYouLikeToSaveTheGameText
+;	call SaveTheGame_yesorno
+;	jr nz, .refused
+;	call AskOverwriteSaveFile
+;	jr c, .refused
 	call PauseGameLogic
-	call _SavingDontTurnOffThePower
+	;call _SavingDontTurnOffThePower
+	call SavedTheGame
 	call ResumeGameLogic
 	call ExitMenu
 	and a
@@ -38,15 +39,15 @@ SaveAfterLinkTrade:
 
 ChangeBoxSaveGame:
 	push de
-	ld hl, ChangeBoxSaveText
-	call MenuTextbox
-	call YesNoBox
-	call ExitMenu
-	jr c, .refused
-	call AskOverwriteSaveFile
-	jr c, .refused
+; 	ld hl, ChangeBoxSaveText
+;	call MenuTextbox
+;	call YesNoBox
+;	call ExitMenu
+;	jr c, .refused
+;	call AskOverwriteSaveFile
+;	jr c, .refused
 	call PauseGameLogic
-	call SavingDontTurnOffThePower
+	;call SavingDontTurnOffThePower
 	call SaveBox
 	pop de
 	ld a, e
@@ -64,7 +65,8 @@ Link_SaveGame:
 	call AskOverwriteSaveFile
 	jr c, .refused
 	call PauseGameLogic
-	call _SavingDontTurnOffThePower
+	;call _SavingDontTurnOffThePower
+	call SavedTheGame
 	call ResumeGameLogic
 	and a
 
@@ -115,15 +117,16 @@ MoveMonWOMail_InsertMon_SaveGame:
 	ret
 
 StartMoveMonWOMail_SaveGame:
-	ld hl, MoveMonWOMailSaveText
-	call MenuTextbox
-	call YesNoBox
-	call ExitMenu
-	jr c, .refused
-	call AskOverwriteSaveFile
-	jr c, .refused
-	call PauseGameLogic
-	call _SavingDontTurnOffThePower
+;	ld hl, MoveMonWOMailSaveText
+;	call MenuTextbox
+;	call YesNoBox
+;	call ExitMenu
+;	jr c, .refused
+;	call AskOverwriteSaveFile
+;	jr c, .refused
+;	call PauseGameLogic
+	;call _SavingDontTurnOffThePower
+	call SavedTheGame
 	call ResumeGameLogic
 	and a
 	ret
@@ -183,22 +186,13 @@ AskOverwriteSaveFile:
 	and a
 	jr z, .erase
 	call CompareLoadedAndSavedPlayerID
-	jr z, .yoursavefile
-	ld hl, AnotherSaveFileText
+	ret z ; pretend the player answered "Yes", but without asking
+;	ld hl, AnotherSaveFileText
 	call SaveTheGame_yesorno
 	jr nz, .refused
-	jr .erase
-
-.yoursavefile
-	ld hl, AlreadyASaveFileText
-	call SaveTheGame_yesorno
-	jr nz, .refused
-	jr .ok
 
 .erase
 	call ErasePreviousSave
-
-.ok
 	and a
 	ret
 
@@ -237,17 +231,14 @@ CompareLoadedAndSavedPlayerID:
 	ret
 
 _SavingDontTurnOffThePower:
-	call SavingDontTurnOffThePower
+	;call SavingDontTurnOffThePower
 SavedTheGame:
-	call _SaveGameData
-	; wait 32 frames
-	ld c, 32
-	call DelayFrames
+	call SaveGameData
 	; copy the original text speed setting to the stack
 	ld a, [wOptions]
 	push af
-	; set text speed to medium
-	ld a, TEXT_DELAY_MED
+	; set text speed to fast
+	ld a, TEXT_DELAY_FAST
 	ld [wOptions], a
 	; <PLAYER> saved the game!
 	ld hl, SavedTheGameText
@@ -257,13 +248,9 @@ SavedTheGame:
 	ld [wOptions], a
 	ld de, SFX_SAVE
 	call WaitPlaySFX
-	call WaitSFX
-	; wait 30 frames
-	ld c, 30
-	call DelayFrames
-	ret
-
-_SaveGameData:
+	jp WaitSFX
+	
+SaveGameData:
 	ld a, TRUE
 	ld [wSaveFileExists], a
 	farcall StageRTCTimeForSave
@@ -347,7 +334,7 @@ SavingDontTurnOffThePower:
 	ld a, TEXT_DELAY_MED
 	ld [wOptions], a
 	; SAVING... DON'T TURN OFF THE POWER.
-	ld hl, SavingDontTurnOffThePowerText
+;	ld hl, SavingDontTurnOffThePowerText
 	call PrintText
 	; Restore the text speed setting
 	pop af
@@ -1103,20 +1090,12 @@ WouldYouLikeToSaveTheGameText:
 	text_far _WouldYouLikeToSaveTheGameText
 	text_end
 
-SavingDontTurnOffThePowerText:
-	text_far _SavingDontTurnOffThePowerText
-	text_end
+;SavingDontTurnOffThePowerText:
+;	text_far _SavingDontTurnOffThePowerText
+;	text_end
 
 SavedTheGameText:
 	text_far _SavedTheGameText
-	text_end
-
-AlreadyASaveFileText:
-	text_far _AlreadyASaveFileText
-	text_end
-
-AnotherSaveFileText:
-	text_far _AnotherSaveFileText
 	text_end
 
 SaveFileCorruptedText:

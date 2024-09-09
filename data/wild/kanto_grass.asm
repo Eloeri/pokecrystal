@@ -3,7 +3,7 @@
 KantoGrassWildMons:
 
 	def_grass_wildmons DIGLETTS_CAVE
-	db 4 percent, 2 percent, 8 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, DIGLETT
 	db 6, DIGLETT
@@ -31,7 +31,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MOON
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 6, ZUBAT
 	db 8, GEODUDE
@@ -59,7 +59,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_1F
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, CUBONE
 	db 11, GEODUDE
@@ -87,7 +87,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROCK_TUNNEL_B1F
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 12, CUBONE
 	db 14, GEODUDE
@@ -115,7 +115,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons VICTORY_ROAD
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 34, GRAVELER
 	db 32, RHYHORN
@@ -143,7 +143,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons TOHJO_FALLS
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 22, ZUBAT
 	db 22, RATICATE
@@ -171,7 +171,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_1
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, PIDGEY
 	db 2, RATTATA
@@ -199,7 +199,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_2
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, CATERPIE
 	db 3, LEDYBA
@@ -227,7 +227,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_3
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 5, SPEAROW
 	db 5, RATTATA
@@ -255,7 +255,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_4
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 5, SPEAROW
 	db 5, RATTATA
@@ -283,7 +283,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_5
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 13, PIDGEY
 	db 13, SNUBBULL
@@ -311,7 +311,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_6
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 13, RATTATA
 	db 13, SNUBBULL
@@ -339,7 +339,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_7
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, RATTATA
 	db 17, SPEAROW
@@ -367,7 +367,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_8
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, SNUBBULL
 	db 19, PIDGEOTTO
@@ -395,7 +395,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_9
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 15, RATTATA
 	db 15, SPEAROW
@@ -423,7 +423,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_10_NORTH
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 15, SPEAROW
 	db 17, VOLTORB
@@ -451,7 +451,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_11
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 14, HOPPIP
 	db 13, RATICATE
@@ -479,7 +479,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_13
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 23, NIDORINO
 	db 23, NIDORINA
@@ -507,7 +507,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_14
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 26, NIDORINO
 	db 26, NIDORINA
@@ -535,7 +535,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_15
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 23, NIDORINO
 	db 23, NIDORINA
@@ -563,7 +563,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_16
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 26, GRIMER
 	db 27, FEAROW
@@ -591,7 +591,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_17
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 30, FEAROW
 	db 29, GRIMER
@@ -619,7 +619,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_18
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 26, GRIMER
 	db 27, FEAROW
@@ -647,7 +647,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_21
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 30, TANGELA
 	db 25, RATTATA
@@ -675,7 +675,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_22
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, RATTATA
 	db 3, SPEAROW
@@ -703,7 +703,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_24
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 8, CATERPIE
 	db 10, CATERPIE
@@ -731,7 +731,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_25
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, CATERPIE
 	db 10, PIDGEY
@@ -759,7 +759,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_26
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 28, DODUO
 	db 28, SANDSLASH
@@ -787,7 +787,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_27
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 28, DODUO
 	db 28, ARBOK
@@ -815,7 +815,7 @@ KantoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_28
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	db 100 percent, 100 percent, 100 percent ; encounter rates: morn/day/nite
 	; morn
 	db 39, TANGELA
 	db 40, PONYTA

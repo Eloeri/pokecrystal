@@ -189,26 +189,14 @@ _WouldYouLikeToSaveTheGameText::
 	line "save the game?"
 	done
 
-_SavingDontTurnOffThePowerText::
-	text "SAVING… DON'T TURN"
-	line "OFF THE POWER."
-	done
+;_SavingDontTurnOffThePowerText::
+;	text "SAVING… DON'T TURN"
+;	line "OFF THE POWER."
+;	done
 
 _SavedTheGameText::
 	text "<PLAYER> saved"
 	line "the game."
-	done
-
-_AlreadyASaveFileText::
-	text "There is already a"
-	line "save file. Is it"
-	cont "OK to overwrite?"
-	done
-
-_AnotherSaveFileText::
-	text "There is another"
-	line "save file. Is it"
-	cont "OK to overwrite?"
 	done
 
 _SaveFileCorruptedText::
@@ -1406,19 +1394,14 @@ _ItemUsedText::
 	text "."
 	done
 
-_ItemGotOnText::
-	text "<PLAYER> got on the@"
-	text_low
-	text_ram wStringBuffer2
-	text "."
+_ExpShareToggleOn::
+	text "The EXP.SHARE was"
+	line "turned on."
 	prompt
 
-_ItemGotOffText::
-	text "<PLAYER> got off@"
-	text_low
-	text "the @"
-	text_ram wStringBuffer2
-	text "."
+_ExpShareToggleOff::
+	text "The EXP.SHARE was"
+	line "turned off."
 	prompt
 
 _KnowsMoveText::

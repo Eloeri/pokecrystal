@@ -803,7 +803,7 @@ _LC_Text6::
 
 _LC_Text7::
 	text_start
-	line "This week's Lucky"
+	line "Today's Lucky"
 	done
 
 _LC_Text8::
@@ -1306,6 +1306,15 @@ _BugCatchingContestIsOverText::
 _RepelWoreOffText::
 	text "REPEL's effect"
 	line "wore off."
+	done
+
+_UseAnotherRepelText::
+	text "@"
+	text_ram wStringBuffer3
+	text "'s"
+	line "wore off."
+
+	para "Use another?"
 	done
 
 _PlayerFoundItemText::

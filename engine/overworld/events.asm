@@ -284,6 +284,14 @@ PlayerEvents:
 	xor a
 	ld [wLandmarkSignTimer], a
 
+; Have player stand (resets running sprite to standing if event starts while running)
+	ld a, [wPlayerState]
+	cp PLAYER_RUN
+	jr nz, .ok2
+	ld a, PLAYER_NORMAL
+	ld [wPlayerState], a
+	farcall UpdatePlayerSprite
+
 .ok2
 	scf
 	ret
@@ -378,7 +386,7 @@ CheckWildEncounterCooldown::
 	ret
 
 SetUpFiveStepWildEncounterCooldown:
-	ld a, 5
+	ld a, 1
 	ld [wWildEncounterCooldown], a
 	ret
 
@@ -943,8 +951,16 @@ DoRepelStep:
 	ld [wRepelEffect], a
 	ret nz
 
+	ld a, [wRepelType]
+	ld [wCurItem], a
+	ld hl, wNumItems
+	call CheckItem
 	ld a, BANK(RepelWoreOffScript)
 	ld hl, RepelWoreOffScript
+	jr nc, .got_script
+	ld a, BANK(UseAnotherRepelScript)
+	ld hl, UseAnotherRepelScript
+.got_script
 	call CallScript
 	scf
 	ret
