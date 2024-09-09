@@ -59,7 +59,7 @@ NurseAskHealText:
 	done
 
 NurseTakePokemonText:
-	text "OK, may I see your"
+	text "Hand me your"
 	line "#MON?"
 	done
 

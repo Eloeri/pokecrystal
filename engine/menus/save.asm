@@ -177,10 +177,6 @@ AddHallOfFameEntry:
 		"GS_BALL_AVAILABLE is no longer equal to $b."
 	ret
 
-SaveGameData:
-	call _SaveGameData
-	ret
-
 AskOverwriteSaveFile:
 	ld a, [wSaveFileExists]
 	and a
