@@ -10,7 +10,7 @@ SaveMenu:
 ;	call AskOverwriteSaveFile
 ;	jr c, .refused
 	call PauseGameLogic
-	;call _SavingDontTurnOffThePower
+	call _SavingDontTurnOffThePower
 	call SavedTheGame
 	call ResumeGameLogic
 	call ExitMenu
