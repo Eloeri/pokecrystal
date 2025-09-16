@@ -37,3 +37,7 @@ gfx/pokemon/*/frames.asm
 *.sn*
 *.sa*
 *.sg1
+
+rgbds-0.7.0/
+
+*.bat
