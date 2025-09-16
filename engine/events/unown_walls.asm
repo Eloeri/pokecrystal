@@ -148,8 +148,7 @@ DisplayUnownWords:
 	call CloseWindow
 	ret
 
-pushc
-setcharmap unown
+pushc unown
 
 INCLUDE "data/events/unown_walls.asm"
 
@@ -158,7 +157,7 @@ _DisplayUnownWords_FillAttr:
 	cp "@"
 	ret z
 	cp "Y"
-	ld a, VRAM_BANK_1 | PAL_BG_BROWN
+	ld a, OAM_BANK1 | PAL_BG_BROWN
 	jr c, .got_pal
 	ld a, PAL_BG_BROWN
 .got_pal
