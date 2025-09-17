@@ -252,8 +252,8 @@ PokemonNames::
 	dname "Ho-Oh"
 	dname "Celebi"
 	assert_table_length NUM_POKEMON
-	db "?????"
-	db "Egg"
+	dname "?????"
+	dname "Egg"
 	assert_table_length EGG
 	dname "?????"
 	dname "?????"
