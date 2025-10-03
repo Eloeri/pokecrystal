@@ -6904,14 +6904,6 @@ FinishBattleAnim:
 GiveExperiencePoints:
 ; Give experience.
 ; Don't give experience if linked or in the Battle Tower.
-	ld a, [wLinkMode]
-	and a
-	ret nz
-
-	ld a, [wInBattleTowerBattle]
-	bit IN_BATTLE_TOWER_BATTLE_F, a
-	ret nz
-
 	xor a
 	ld [wCurPartyMon], a
 	ld bc, wPartyMon1Species
