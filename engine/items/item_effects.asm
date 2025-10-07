@@ -759,6 +759,7 @@ HeavyBall_GetDexEntryBank:
 	push hl
 	push de
 	ld a, [wEnemyMonSpecies]
+	dec a
 	rlca
 	rlca
 	maskbits NUM_DEX_ENTRY_BANKS
