@@ -942,7 +942,7 @@ _DidNotLearnMoveText::
 	cont "@"
 	text_ram wStringBuffer2
 	text "."
-	prompt
+	autodone
 
 _AskForgetMoveText::
 	text_ram wMonOrItemNameBuffer
@@ -1163,34 +1163,34 @@ _BallDodgedText::
 	text "It dodged the"
 	line "thrown BALL!"
 
-	para "This #MON"
+	autopara "This #MON"
 	line "can't be caught!"
-	prompt
+	autodone
 
 _BallMissedText::
 	text "You missed the"
 	line "#MON!"
-	prompt
+	autodone
 
 _BallBrokeFreeText::
 	text "Oh no! The #MON"
 	line "broke free!"
-	prompt
+	autodone
 
 _BallAppearedCaughtText::
 	text "Aww! It appeared"
 	line "to be caught!"
-	prompt
+	autodone
 
 _BallAlmostHadItText::
 	text "Aargh!"
 	line "Almost had it!"
-	prompt
+	autodone
 
 _BallSoCloseText::
 	text "Shoot! It was so"
 	line "close too!"
-	prompt
+	autodone
 
 Text_BallCaught::
 	text "Gotcha! @"
@@ -1218,7 +1218,7 @@ _NewDexDataText::
 	text_ram wEnemyMonNickname
 	text "'s data"
 	line "was newly added to"
-	cont "the #DEX.@"
+	scroll "the #DEX.@"
 	sound_slot_machine_start
 	text_promptbutton
 	text_end
@@ -1238,18 +1238,18 @@ _ItemStatRoseText::
 	line "@"
 	text_ram wStringBuffer2
 	text " rose."
-	prompt
+	autodone
 
 _ItemCantUseOnMonText::
 	text "That can't be used"
 	line "on this #MON."
-	prompt
+	autodone
 
 _RepelUsedEarlierIsStillInEffectText::
 	text "The REPEL used"
 	line "earlier is still"
 	cont "in effect."
-	prompt
+	autodone
 
 _PlayedFluteText::
 	text "Played the #"
