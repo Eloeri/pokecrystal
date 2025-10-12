@@ -11,7 +11,6 @@ SaveMenu:
 ;	jr c, .refused
 	call PauseGameLogic
 	call _SavingDontTurnOffThePower
-	call SavedTheGame
 	call ResumeGameLogic
 	call ExitMenu
 	and a
