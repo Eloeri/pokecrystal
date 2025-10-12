@@ -325,17 +325,17 @@ _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
 	line "SURF!"
-	done
+	autodone
 
 _CantSurfText::
 	text "You can't SURF"
 	line "here."
-	prompt
+	autodone
 
 _AlreadySurfingText::
 	text "You're already"
 	line "SURFING."
-	prompt
+	autodone
 
 _AskSurfText::
 	text "The water is calm."
@@ -346,7 +346,7 @@ _UseWaterfallText::
 	text_ram wStringBuffer2
 	text " used"
 	line "WATERFALL!"
-	done
+	autodone
 
 _HugeWaterfallText::
 	text "Wow, it's a huge"
@@ -362,17 +362,17 @@ _UseDigText::
 	text_ram wStringBuffer2
 	text " used"
 	line "DIG!"
-	done
+	autodone
 
 _UseEscapeRopeText::
 	text "<PLAYER> used an"
 	line "ESCAPE ROPE."
-	done
+	autodone
 
 _CantUseDigText::
 	text "Can't use that"
 	line "here."
-	done
+	autodone
 
 _TeleportReturnText::
 	text "Return to the last"
@@ -389,13 +389,13 @@ _CantUseTeleportText::
 _AlreadyUsingStrengthText::
 	text "A #MON is using"
 	line "STRENGTH already."
-	prompt
+	autodone
 
 _UseStrengthText::
 	text_ram wStringBuffer2
 	text " used"
 	line "STRENGTH!"
-	done
+	autodone
 
 _MoveBoulderText::
 	text_ram wStringBuffer1
@@ -407,7 +407,7 @@ _AskStrengthText::
 	text "A #MON may be"
 	line "able to move this."
 
-	para "Want to use"
+	autopara "Want to use"
 	line "STRENGTH?"
 	done
 
@@ -425,7 +425,7 @@ _UseWhirlpoolText::
 	text_ram wStringBuffer2
 	text " used"
 	line "WHIRLPOOL!"
-	prompt
+	autodone
 
 _MayPassWhirlpoolText::
 	text "It's a vicious"
@@ -439,7 +439,7 @@ _AskWhirlpoolText::
 	text "A whirlpool is in"
 	line "the way."
 
-	para "Want to use"
+	autopara "Want to use"
 	line "WHIRLPOOL?"
 	done
 
@@ -447,7 +447,7 @@ _UseHeadbuttText::
 	text_ram wStringBuffer2
 	text " did a"
 	line "HEADBUTT!"
-	prompt
+	autodone
 
 _HeadbuttNothingText::
 	text "Nope. Nothing…"
@@ -465,7 +465,7 @@ _UseRockSmashText::
 	text_ram wStringBuffer2
 	text " used"
 	line "ROCK SMASH!"
-	prompt
+	autodone
 
 _MaySmashText::
 	text "Maybe a #MON"
@@ -476,7 +476,7 @@ _AskRockSmashText::
 	text "This rock looks"
 	line "breakable."
 
-	para "Want to use ROCK"
+	autopara "Want to use ROCK"
 	line "SMASH?"
 	done
 
