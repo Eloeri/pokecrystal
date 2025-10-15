@@ -325,17 +325,17 @@ _UsedSurfText::
 	text_ram wStringBuffer2
 	text " used"
 	line "SURF!"
-	autodone
+	prompt
 
 _CantSurfText::
 	text "You can't SURF"
 	line "here."
-	autodone
+	prompt
 
 _AlreadySurfingText::
 	text "You're already"
 	line "SURFING."
-	autodone
+	prompt
 
 _AskSurfText::
 	text "The water is calm."
@@ -346,7 +346,7 @@ _UseWaterfallText::
 	text_ram wStringBuffer2
 	text " used"
 	line "WATERFALL!"
-	autodone
+	prompt
 
 _HugeWaterfallText::
 	text "Wow, it's a huge"
@@ -362,17 +362,17 @@ _UseDigText::
 	text_ram wStringBuffer2
 	text " used"
 	line "DIG!"
-	autodone
+	prompt
 
 _UseEscapeRopeText::
 	text "<PLAYER> used an"
 	line "ESCAPE ROPE."
-	autodone
+	prompt
 
 _CantUseDigText::
 	text "Can't use that"
 	line "here."
-	autodone
+	prompt
 
 _TeleportReturnText::
 	text "Return to the last"
@@ -389,13 +389,13 @@ _CantUseTeleportText::
 _AlreadyUsingStrengthText::
 	text "A #MON is using"
 	line "STRENGTH already."
-	autodone
+	prompt
 
 _UseStrengthText::
 	text_ram wStringBuffer2
 	text " used"
 	line "STRENGTH!"
-	autodone
+	prompt
 
 _MoveBoulderText::
 	text_ram wStringBuffer1
@@ -425,7 +425,7 @@ _UseWhirlpoolText::
 	text_ram wStringBuffer2
 	text " used"
 	line "WHIRLPOOL!"
-	autodone
+	prompt
 
 _MayPassWhirlpoolText::
 	text "It's a vicious"
@@ -447,7 +447,7 @@ _UseHeadbuttText::
 	text_ram wStringBuffer2
 	text " did a"
 	line "HEADBUTT!"
-	autodone
+	prompt
 
 _HeadbuttNothingText::
 	text "Nope. Nothing…"
@@ -465,7 +465,7 @@ _UseRockSmashText::
 	text_ram wStringBuffer2
 	text " used"
 	line "ROCK SMASH!"
-	autodone
+	prompt
 
 _MaySmashText::
 	text "Maybe a #MON"
