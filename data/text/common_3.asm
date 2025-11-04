@@ -199,11 +199,11 @@ _SavedTheGameText::
 	line "the game."
 	done
 
-_AlreadyASaveFileText::
-	text "There is already a"
-	line "save file. Is it"
-	cont "OK to overwrite?"
-	done
+;_AlreadyASaveFileText::
+;	text "There is already a"
+;	line "save file. Is it"
+;	cont "OK to overwrite?"
+;	done
 
 _AnotherSaveFileText::
 	text "There is another"
