@@ -206,9 +206,7 @@ _SavedTheGameText::
 ;	done
 
 _AnotherSaveFileText::
-	text "There is another"
-	line "save file. Is it"
-	cont "OK to overwrite?"
+	text "overwrite?"
 	done
 
 _SaveFileCorruptedText::
