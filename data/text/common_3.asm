@@ -217,15 +217,11 @@ _SaveFileCorruptedText::
 	prompt
 
 _ChangeBoxSaveText::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved. OK?"
+	text "Change box?"
 	done
 
 _MoveMonWOMailSaveText::
-	text "Each time you move"
-	line "a #MON, data"
-	cont "will be saved. OK?"
+	text "Move #MON?"
 	done
 
 _WindowAreaExceededErrorText:: ; unreferenced
