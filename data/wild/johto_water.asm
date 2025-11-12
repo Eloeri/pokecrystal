@@ -195,7 +195,7 @@ JohtoWaterWildMons:
 	db 100 percent ; encounter rate
 	db 25, POLIWAG
 	db 20, POLIWAG
-	db 25, POLIWHIRL
+	db 25, REMORAID
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_45
